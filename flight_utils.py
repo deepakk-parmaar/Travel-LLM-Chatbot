@@ -1,7 +1,8 @@
 from amadeus import Client, ResponseError
-from amadeus import Location
-# Initialize the Amadeus Client
-def search_flights(origin_code, destination_code, departure_date,adults):
+import folium
+
+
+def search_flights(origin_code, destination_code, departure_date, adults):
     amadeus = Client(
         client_id='SpBbfoEGAa8jRrbOLqApL6il8ddVoQU0',
         client_secret='rUyAVMUY44pnEyF3'
@@ -12,72 +13,46 @@ def search_flights(origin_code, destination_code, departure_date,adults):
                 originLocationCode=origin_code,
                 destinationLocationCode=destination_code,
                 departureDate=departure_date,
-                adults=adults
+                adults=adults,
+                max=3
             )
-            return response.data
-        except ResponseError as error:
-            print(f"An error occurred: {error}")
+            print("flights", response.data[0])
+            return response.data[:10]
+        except Exception as error:
             return None
     else:
         print("Could not get IATA codes for the cities")
         return None
 
-def book_flight(flight_offer, traveler_info):
+
+def search_hotel(city_code):
     amadeus = Client(
         client_id='SpBbfoEGAa8jRrbOLqApL6il8ddVoQU0',
         client_secret='rUyAVMUY44pnEyF3'
     )
     try:
-        # Price the flight offer to get the final price
-        price_response = amadeus.shopping.flight_offers.pricing.post(
-            flight_offer)
-        priced_flight_offer = price_response.data
+        response = amadeus.reference_data.locations.hotels.by_city.get(
+            cityCode=city_code)
+        # print(response.data[0])
+        response = response.data[:30]
+        hotels = response
+        # Create a map centered around the first hotel
+        hotel_map = folium.Map(location=[
+            hotels[0]['geoCode']['latitude'], hotels[0]['geoCode']['longitude']], zoom_start=12)
+        # Add hotel markers to the map
+        for hotel in hotels:
+            folium.Marker(
+                location=[hotel['geoCode']['latitude'],
+                          hotel['geoCode']['longitude']],
+                popup=hotel['name']
+            ).add_to(hotel_map)
 
-        # Book the flight offer
-        booking_response = amadeus.booking.flight_orders.post(
-            {
-                'type': 'flight-order',
-                'flightOffers': [priced_flight_offer],
-                'travelers': traveler_info
-            }
-        )
-        return booking_response.data
+        hotel_map.save('hotel_map.html')
+        return response, hotel_map
     except ResponseError as error:
         print(f"An error occurred: {error}")
-        return None
-    # Example traveler information
-    traveler_info = [
-        {
-            "id": "1",
-            "dateOfBirth": "1980-01-01",
-            "name": {
-                "firstName": "John",
-                "lastName": "Doe"
-            },
-            "gender": "MALE",
-            "contact": {
-                "emailAddress": "john.doe@example.com",
-                "phones": [
-                    {
-                        "deviceType": "MOBILE",
-                        "countryCallingCode": "1",
-                        "number": "1234567890"
-                    }
-                ]
-            },
-            "documents": [
-                {
-                    "documentType": "PASSPORT",
-                    "birthPlace": "Madrid",
-                    "issuanceLocation": "Madrid",
-                    "issuanceDate": "2015-04-14",
-                    "number": "00000000",
-                    "expiryDate": "2025-04-14",
-                    "issuanceCountry": "ES",
-                    "validityCountry": "ES",
-                    "nationality": "ES",
-                    "holder": True
-                }
-            ]
-        }
-    ]
+        raise error
+
+
+if __name__ == "__main__":
+    print(search_hotel("NYC"))

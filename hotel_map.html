@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_42b6d87b60dde21cd758c99e3f8f9f53 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_42b6d87b60dde21cd758c99e3f8f9f53" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_42b6d87b60dde21cd758c99e3f8f9f53 = L.map(
+                "map_42b6d87b60dde21cd758c99e3f8f9f53",
+                {
+                    center: [28.58149, 77.05652],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_480a7ef54e9bb889bf127ea25159445a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_480a7ef54e9bb889bf127ea25159445a.addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+            var marker_fc56cfd4003c65cddcb07b0df4848c50 = L.marker(
+                [28.58149, 77.05652],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_c32f9f0fbd11d636483fd74db8b6dfcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55005d1fe657bef28f4ab627b17d0b63 = $(`<div id="html_55005d1fe657bef28f4ab627b17d0b63" style="width: 100.0%; height: 100.0%;">WELCOMHOTEL DWARKA NEW DELHI</div>`)[0];
+                popup_c32f9f0fbd11d636483fd74db8b6dfcd.setContent(html_55005d1fe657bef28f4ab627b17d0b63);
+            
+        
+
+        marker_fc56cfd4003c65cddcb07b0df4848c50.bindPopup(popup_c32f9f0fbd11d636483fd74db8b6dfcd)
+        ;
+
+        
+    
+    
+            var marker_8b32044208120621acde5cf4589c2616 = L.marker(
+                [28.45841, 77.03465],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_d1e8b2ce9fdbcb3763efad6b03ab63e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_00cfdc86d1782c8c5fb997dfb8d6e028 = $(`<div id="html_00cfdc86d1782c8c5fb997dfb8d6e028" style="width: 100.0%; height: 100.0%;">BEST WESTERN SKYCITY HOTEL</div>`)[0];
+                popup_d1e8b2ce9fdbcb3763efad6b03ab63e3.setContent(html_00cfdc86d1782c8c5fb997dfb8d6e028);
+            
+        
+
+        marker_8b32044208120621acde5cf4589c2616.bindPopup(popup_d1e8b2ce9fdbcb3763efad6b03ab63e3)
+        ;
+
+        
+    
+    
+            var marker_10514c34924cbf9cd75470a915d5b9fe = L.marker(
+                [28.28284, 76.93142],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_0ceb7a13c27597812d2e401d6c935117 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca2c22a1b7e1083531c5f47a26e51b33 = $(`<div id="html_ca2c22a1b7e1083531c5f47a26e51b33" style="width: 100.0%; height: 100.0%;">BEST WESTERN RESORT COUNTRY CLUB</div>`)[0];
+                popup_0ceb7a13c27597812d2e401d6c935117.setContent(html_ca2c22a1b7e1083531c5f47a26e51b33);
+            
+        
+
+        marker_10514c34924cbf9cd75470a915d5b9fe.bindPopup(popup_0ceb7a13c27597812d2e401d6c935117)
+        ;
+
+        
+    
+    
+            var marker_df543bc6142814d5fd1230c426510407 = L.marker(
+                [28.5904, 77.22475],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_2c1460dc6745205bdba5e841f28132bf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fd0cf4c035703924c8c624dd36620dab = $(`<div id="html_fd0cf4c035703924c8c624dd36620dab" style="width: 100.0%; height: 100.0%;">CLARION COLLECTION</div>`)[0];
+                popup_2c1460dc6745205bdba5e841f28132bf.setContent(html_fd0cf4c035703924c8c624dd36620dab);
+            
+        
+
+        marker_df543bc6142814d5fd1230c426510407.bindPopup(popup_2c1460dc6745205bdba5e841f28132bf)
+        ;
+
+        
+    
+    
+            var marker_216037b3b85a3befb07fd365e8718309 = L.marker(
+                [28.64559, 77.21709],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_867041bc277f35ae10cec6a401820697 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fb2b5db5426798bf8c216ccb4e4d144 = $(`<div id="html_5fb2b5db5426798bf8c216ccb4e4d144" style="width: 100.0%; height: 100.0%;">HOTEL DELHI CITY CENTRE</div>`)[0];
+                popup_867041bc277f35ae10cec6a401820697.setContent(html_5fb2b5db5426798bf8c216ccb4e4d144);
+            
+        
+
+        marker_216037b3b85a3befb07fd365e8718309.bindPopup(popup_867041bc277f35ae10cec6a401820697)
+        ;
+
+        
+    
+    
+            var marker_7fe2ea13b8206869be446fcd8eb43d89 = L.marker(
+                [28.64561, 77.21686],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_f16de82068b215f2f2b689fd8b207f9a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6e5b927e93eab3a9b8fba07c6660dc32 = $(`<div id="html_6e5b927e93eab3a9b8fba07c6660dc32" style="width: 100.0%; height: 100.0%;">HOTEL AJANTA</div>`)[0];
+                popup_f16de82068b215f2f2b689fd8b207f9a.setContent(html_6e5b927e93eab3a9b8fba07c6660dc32);
+            
+        
+
+        marker_7fe2ea13b8206869be446fcd8eb43d89.bindPopup(popup_f16de82068b215f2f2b689fd8b207f9a)
+        ;
+
+        
+    
+    
+            var marker_c0844b8c1ae944dd20ce5a7cc22d7a47 = L.marker(
+                [28.54989, 77.23687],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_3df9504252485a31d6243c7257bd0f0b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fd637e862997481078c6f15a48bb3a0 = $(`<div id="html_0fd637e862997481078c6f15a48bb3a0" style="width: 100.0%; height: 100.0%;">COMFORT INN ANNEHA</div>`)[0];
+                popup_3df9504252485a31d6243c7257bd0f0b.setContent(html_0fd637e862997481078c6f15a48bb3a0);
+            
+        
+
+        marker_c0844b8c1ae944dd20ce5a7cc22d7a47.bindPopup(popup_3df9504252485a31d6243c7257bd0f0b)
+        ;
+
+        
+    
+    
+            var marker_0e694053a8e5d812fc050727ec7079ea = L.marker(
+                [28.72015, 77.10983],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_c842eb5897631ac5eecea92a7f4b7198 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2c7fa0b544462a7fd358e4a322a0f092 = $(`<div id="html_2c7fa0b544462a7fd358e4a322a0f092" style="width: 100.0%; height: 100.0%;">CROWNE PLAZA NEW DELHI ROHINI</div>`)[0];
+                popup_c842eb5897631ac5eecea92a7f4b7198.setContent(html_2c7fa0b544462a7fd358e4a322a0f092);
+            
+        
+
+        marker_0e694053a8e5d812fc050727ec7079ea.bindPopup(popup_c842eb5897631ac5eecea92a7f4b7198)
+        ;
+
+        
+    
+    
+            var marker_1c3de7ab6d991343974af160eadb5a57 = L.marker(
+                [28.46834, 77.05959],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_8cb4ccd6a13fbaf965ef4adef1a0d944 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b5db7165ee937778380596bcd99aa781 = $(`<div id="html_b5db7165ee937778380596bcd99aa781" style="width: 100.0%; height: 100.0%;">CROWNE PLAZA GURGAON</div>`)[0];
+                popup_8cb4ccd6a13fbaf965ef4adef1a0d944.setContent(html_b5db7165ee937778380596bcd99aa781);
+            
+        
+
+        marker_1c3de7ab6d991343974af160eadb5a57.bindPopup(popup_8cb4ccd6a13fbaf965ef4adef1a0d944)
+        ;
+
+        
+    
+    
+            var marker_718da85d49bc34b1afb909b614bf0a55 = L.marker(
+                [28.59115, 77.29859],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_58ade0e2ff921a56b0b61ff249e52b64 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eb424c591635ebf9cd9d358acd42697f = $(`<div id="html_eb424c591635ebf9cd9d358acd42697f" style="width: 100.0%; height: 100.0%;">CROWNE PLAZA MAYUR VIHAR NOIDA</div>`)[0];
+                popup_58ade0e2ff921a56b0b61ff249e52b64.setContent(html_eb424c591635ebf9cd9d358acd42697f);
+            
+        
+
+        marker_718da85d49bc34b1afb909b614bf0a55.bindPopup(popup_58ade0e2ff921a56b0b61ff249e52b64)
+        ;
+
+        
+    
+    
+            var marker_8f36bb8c52eca2d00ebcde4a4d8114b3 = L.marker(
+                [28.5612, 77.26971],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_b49605623c1ad7aa6567cffdeffb6502 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_156212af28e6e5ef0f424451e940e028 = $(`<div id="html_156212af28e6e5ef0f424451e940e028" style="width: 100.0%; height: 100.0%;">CROWNE PLAZA NEW DELHI OKHLA</div>`)[0];
+                popup_b49605623c1ad7aa6567cffdeffb6502.setContent(html_156212af28e6e5ef0f424451e940e028);
+            
+        
+
+        marker_8f36bb8c52eca2d00ebcde4a4d8114b3.bindPopup(popup_b49605623c1ad7aa6567cffdeffb6502)
+        ;
+
+        
+    
+    
+            var marker_937b68af5eda34ea0842fed82e20d766 = L.marker(
+                [28.65442, 77.34399],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_a819a1fb3b7a1f69c4f57e8f35a3e03d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4d477db54e8aff1b61d9eca5292977c = $(`<div id="html_e4d477db54e8aff1b61d9eca5292977c" style="width: 100.0%; height: 100.0%;">COUNTRY INN SUITES SAHIBABAD</div>`)[0];
+                popup_a819a1fb3b7a1f69c4f57e8f35a3e03d.setContent(html_e4d477db54e8aff1b61d9eca5292977c);
+            
+        
+
+        marker_937b68af5eda34ea0842fed82e20d766.bindPopup(popup_a819a1fb3b7a1f69c4f57e8f35a3e03d)
+        ;
+
+        
+    
+    
+            var marker_23201394efb300b5b7b780b35e3e7d5d = L.marker(
+                [28.40753, 76.89659],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_a3e4c4741217e71387cf23bc98bef04f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ddf5ecfa91aeb4fd3e41f40194402c9c = $(`<div id="html_ddf5ecfa91aeb4fd3e41f40194402c9c" style="width: 100.0%; height: 100.0%;">COUNTRY INN GURGAON SECTOR 12</div>`)[0];
+                popup_a3e4c4741217e71387cf23bc98bef04f.setContent(html_ddf5ecfa91aeb4fd3e41f40194402c9c);
+            
+        
+
+        marker_23201394efb300b5b7b780b35e3e7d5d.bindPopup(popup_a3e4c4741217e71387cf23bc98bef04f)
+        ;
+
+        
+    
+    
+            var marker_a9eac420f9bdfba9cbd9266b2e7e7c19 = L.marker(
+                [28.46216, 77.06756],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_31e14a04fb027f6204bc826a1c926497 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e828cf39e478989c94a3b4aaad1fba0b = $(`<div id="html_e828cf39e478989c94a3b4aaad1fba0b" style="width: 100.0%; height: 100.0%;">COUNTRY INN GURGAON SECTOR 29</div>`)[0];
+                popup_31e14a04fb027f6204bc826a1c926497.setContent(html_e828cf39e478989c94a3b4aaad1fba0b);
+            
+        
+
+        marker_a9eac420f9bdfba9cbd9266b2e7e7c19.bindPopup(popup_31e14a04fb027f6204bc826a1c926497)
+        ;
+
+        
+    
+    
+            var marker_0023f1c98924cb420e2ec031d0939841 = L.marker(
+                [28.47179, 77.18693],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_f45481ff6636d104723aca2e07cdf69b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e8fadb3500b80018ac0321e2dc64ead = $(`<div id="html_4e8fadb3500b80018ac0321e2dc64ead" style="width: 100.0%; height: 100.0%;">COUNTRY INN SUITES SATBARI</div>`)[0];
+                popup_f45481ff6636d104723aca2e07cdf69b.setContent(html_4e8fadb3500b80018ac0321e2dc64ead);
+            
+        
+
+        marker_0023f1c98924cb420e2ec031d0939841.bindPopup(popup_f45481ff6636d104723aca2e07cdf69b)
+        ;
+
+        
+    
+    
+            var marker_1c6f9395a0ab2f360f6fc0823e50edda = L.marker(
+                [28.3348, 77.06793],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_1ce4f4afbabda46b03846d4af763143e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2658c764e25dc8eb47f1c3dfe01d540 = $(`<div id="html_f2658c764e25dc8eb47f1c3dfe01d540" style="width: 100.0%; height: 100.0%;">COUNTRY INN GURGAON SOHNA ROAD</div>`)[0];
+                popup_1ce4f4afbabda46b03846d4af763143e.setContent(html_f2658c764e25dc8eb47f1c3dfe01d540);
+            
+        
+
+        marker_1c6f9395a0ab2f360f6fc0823e50edda.bindPopup(popup_1ce4f4afbabda46b03846d4af763143e)
+        ;
+
+        
+    
+    
+            var marker_f1c1fac9929efab1b619b1f6cdbf4111 = L.marker(
+                [28.46098, 77.08028],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_391bd40402482a08a73f387ea9b18d3b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c859749fa7f3d1e73bf0ddb1825811fc = $(`<div id="html_c859749fa7f3d1e73bf0ddb1825811fc" style="width: 100.0%; height: 100.0%;">COURTYARD GURGAON MARRIOTT</div>`)[0];
+                popup_391bd40402482a08a73f387ea9b18d3b.setContent(html_c859749fa7f3d1e73bf0ddb1825811fc);
+            
+        
+
+        marker_f1c1fac9929efab1b619b1f6cdbf4111.bindPopup(popup_391bd40402482a08a73f387ea9b18d3b)
+        ;
+
+        
+    
+    
+            var marker_5549f0ef72944e195d9fe2ea11a86a65 = L.marker(
+                [28.54317, 77.24265],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_640de4f7669d633546b0b031bb374ede = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_213a2f6c9b8bb023fb36cbe04a17ba23 = $(`<div id="html_213a2f6c9b8bb023fb36cbe04a17ba23" style="width: 100.0%; height: 100.0%;">HOTEL THE RAJ</div>`)[0];
+                popup_640de4f7669d633546b0b031bb374ede.setContent(html_213a2f6c9b8bb023fb36cbe04a17ba23);
+            
+        
+
+        marker_5549f0ef72944e195d9fe2ea11a86a65.bindPopup(popup_640de4f7669d633546b0b031bb374ede)
+        ;
+
+        
+    
+    
+            var marker_4b165aa3e44992a864ebae3978700704 = L.marker(
+                [28.54317, 77.24265],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_4f872937e794b03cf8bf9dc2c42b4c06 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e385f681b61398f7bd05187f39dfb52 = $(`<div id="html_0e385f681b61398f7bd05187f39dfb52" style="width: 100.0%; height: 100.0%;">JW MARRIOTT HOTEL NEW DELHI AEROCITY</div>`)[0];
+                popup_4f872937e794b03cf8bf9dc2c42b4c06.setContent(html_0e385f681b61398f7bd05187f39dfb52);
+            
+        
+
+        marker_4b165aa3e44992a864ebae3978700704.bindPopup(popup_4f872937e794b03cf8bf9dc2c42b4c06)
+        ;
+
+        
+    
+    
+            var marker_a72ba8220d7d75e8841b0c8a2b04a6b0 = L.marker(
+                [28.54317, 77.24265],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_52fb080e0f0eb56ccffff6fe6972ff5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9b0b326e0ce11e78f8198345462d053a = $(`<div id="html_9b0b326e0ce11e78f8198345462d053a" style="width: 100.0%; height: 100.0%;">ROCKLAND C R PARK</div>`)[0];
+                popup_52fb080e0f0eb56ccffff6fe6972ff5e.setContent(html_9b0b326e0ce11e78f8198345462d053a);
+            
+        
+
+        marker_a72ba8220d7d75e8841b0c8a2b04a6b0.bindPopup(popup_52fb080e0f0eb56ccffff6fe6972ff5e)
+        ;
+
+        
+    
+    
+            var marker_33cf6736c2062138554c325d4932f1e8 = L.marker(
+                [28.54317, 77.24265],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_739c7513f3440780f7079de808daf667 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45f0ed0ab38d35bc621f7ceb296b0caa = $(`<div id="html_45f0ed0ab38d35bc621f7ceb296b0caa" style="width: 100.0%; height: 100.0%;">LEMON TREE PREMIER - DELHI AEROCITY</div>`)[0];
+                popup_739c7513f3440780f7079de808daf667.setContent(html_45f0ed0ab38d35bc621f7ceb296b0caa);
+            
+        
+
+        marker_33cf6736c2062138554c325d4932f1e8.bindPopup(popup_739c7513f3440780f7079de808daf667)
+        ;
+
+        
+    
+    
+            var marker_7c0f3b99d08c5514bc141767b79b7669 = L.marker(
+                [28.62886, 77.21625],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_f2bf049f93b2c2a3b160225d6c3a6d88 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f2fb9813402ed981fe6769318e619d0e = $(`<div id="html_f2fb9813402ed981fe6769318e619d0e" style="width: 100.0%; height: 100.0%;">THE PARK NEW DELHI</div>`)[0];
+                popup_f2bf049f93b2c2a3b160225d6c3a6d88.setContent(html_f2fb9813402ed981fe6769318e619d0e);
+            
+        
+
+        marker_7c0f3b99d08c5514bc141767b79b7669.bindPopup(popup_f2bf049f93b2c2a3b160225d6c3a6d88)
+        ;
+
+        
+    
+    
+            var marker_80e0c49e7eb2ee5bb753f18dad030755 = L.marker(
+                [28.64794, 77.28197],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_f33ce978c10dda4dc839d9896b40fa2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f573850a84177d9c0f56c527dc2ec323 = $(`<div id="html_f573850a84177d9c0f56c527dc2ec323" style="width: 100.0%; height: 100.0%;">EATON SMART NEW DELHI AIRPORT</div>`)[0];
+                popup_f33ce978c10dda4dc839d9896b40fa2b.setContent(html_f573850a84177d9c0f56c527dc2ec323);
+            
+        
+
+        marker_80e0c49e7eb2ee5bb753f18dad030755.bindPopup(popup_f33ce978c10dda4dc839d9896b40fa2b)
+        ;
+
+        
+    
+    
+            var marker_a7a84c7fa35c2f9ac08f0f300f58faca = L.marker(
+                [28.63243, 77.21879],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_94a2b4e14332b19c1677bf1b02550488 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c51e255fc81299f3095a56927ecd9d99 = $(`<div id="html_c51e255fc81299f3095a56927ecd9d99" style="width: 100.0%; height: 100.0%;">HOTEL SWATI</div>`)[0];
+                popup_94a2b4e14332b19c1677bf1b02550488.setContent(html_c51e255fc81299f3095a56927ecd9d99);
+            
+        
+
+        marker_a7a84c7fa35c2f9ac08f0f300f58faca.bindPopup(popup_94a2b4e14332b19c1677bf1b02550488)
+        ;
+
+        
+    
+    
+            var marker_387187cdc6658574110d4469420ab141 = L.marker(
+                [28.65239, 77.19607],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_eab5c4ff931330c1dd1aa9770fb889ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e48d547796a9a52e037e83239b6051b2 = $(`<div id="html_e48d547796a9a52e037e83239b6051b2" style="width: 100.0%; height: 100.0%;">HOTEL SWATI DELUXE</div>`)[0];
+                popup_eab5c4ff931330c1dd1aa9770fb889ec.setContent(html_e48d547796a9a52e037e83239b6051b2);
+            
+        
+
+        marker_387187cdc6658574110d4469420ab141.bindPopup(popup_eab5c4ff931330c1dd1aa9770fb889ec)
+        ;
+
+        
+    
+    
+            var marker_80ad55564e613c3fe74e2afd0bda1010 = L.marker(
+                [42.651, 18.06099],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_842ba821ef533123bc4a1afdb979b68f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ba557230dcc8d15f18a37c86cc8a375 = $(`<div id="html_0ba557230dcc8d15f18a37c86cc8a375" style="width: 100.0%; height: 100.0%;">HOTEL ROYAL CASTLE GRAND</div>`)[0];
+                popup_842ba821ef533123bc4a1afdb979b68f.setContent(html_0ba557230dcc8d15f18a37c86cc8a375);
+            
+        
+
+        marker_80ad55564e613c3fe74e2afd0bda1010.bindPopup(popup_842ba821ef533123bc4a1afdb979b68f)
+        ;
+
+        
+    
+    
+            var marker_2a2f48f98618189198c58957062fcc5a = L.marker(
+                [12.89643, 77.4537],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_60974d12666e9d904d9efbade89159db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_feb0608711bd452bd40bcd984a077ade = $(`<div id="html_feb0608711bd452bd40bcd984a077ade" style="width: 100.0%; height: 100.0%;">TIVOLI GRAND RESORT HOTEL</div>`)[0];
+                popup_60974d12666e9d904d9efbade89159db.setContent(html_feb0608711bd452bd40bcd984a077ade);
+            
+        
+
+        marker_2a2f48f98618189198c58957062fcc5a.bindPopup(popup_60974d12666e9d904d9efbade89159db)
+        ;
+
+        
+    
+    
+            var marker_2d4951b0e2f2cdaacce0f0907d43e9b5 = L.marker(
+                [42.651, 18.06099],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_2ece80716be8dd1982919065977a5bd3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_37eafed83add28946ef4c1f4daec64de = $(`<div id="html_37eafed83add28946ef4c1f4daec64de" style="width: 100.0%; height: 100.0%;">HOTEL BIZZOTEL GRAND</div>`)[0];
+                popup_2ece80716be8dd1982919065977a5bd3.setContent(html_37eafed83add28946ef4c1f4daec64de);
+            
+        
+
+        marker_2d4951b0e2f2cdaacce0f0907d43e9b5.bindPopup(popup_2ece80716be8dd1982919065977a5bd3)
+        ;
+
+        
+    
+    
+            var marker_b1d7ba74e13230044a85741c40095e59 = L.marker(
+                [28.47511, 77.10269],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_b12eb37c4e448d0123c55f2920a0d802 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73b3fbc0b5babdaecca75fc35a183b20 = $(`<div id="html_73b3fbc0b5babdaecca75fc35a183b20" style="width: 100.0%; height: 100.0%;">ROYAL RETREAT</div>`)[0];
+                popup_b12eb37c4e448d0123c55f2920a0d802.setContent(html_73b3fbc0b5babdaecca75fc35a183b20);
+            
+        
+
+        marker_b1d7ba74e13230044a85741c40095e59.bindPopup(popup_b12eb37c4e448d0123c55f2920a0d802)
+        ;
+
+        
+    
+    
+            var marker_a48af7d2ede5d66355abd2e63b3b0af4 = L.marker(
+                [28.47085, 77.06046],
+                {}
+            ).addTo(map_42b6d87b60dde21cd758c99e3f8f9f53);
+        
+    
+        var popup_62063b975eb78094f52045bbcfaca15a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12f8d458171f8cccbe4d2548a69df2c0 = $(`<div id="html_12f8d458171f8cccbe4d2548a69df2c0" style="width: 100.0%; height: 100.0%;">VISTA PARK GURGAON</div>`)[0];
+                popup_62063b975eb78094f52045bbcfaca15a.setContent(html_12f8d458171f8cccbe4d2548a69df2c0);
+            
+        
+
+        marker_a48af7d2ede5d66355abd2e63b3b0af4.bindPopup(popup_62063b975eb78094f52045bbcfaca15a)
+        ;
+
+        
+    
+</script>
+</html>

@@ -10,7 +10,7 @@ def chat_groq():
     """
     load_dotenv()
     model = ChatGroq(model='llama3-70b-8192', temperature=0, verbose=True,
-                     api_key="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")
+                     api_key=os.getenv('groq'))
     return model
 
 
